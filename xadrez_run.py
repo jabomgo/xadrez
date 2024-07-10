@@ -19,35 +19,35 @@ class Peao(Peca):
         return super().movimento_valido(linha_destino, coluna_destino)
     
     def __str__(self) -> str:
-        return 'Peão'
+        return 'Peão '+ self.cor
     
 class Rei(Peca):
     def movimento_valido(self, linha_destino, coluna_destino):
         return super().movimento_valido(linha_destino, coluna_destino)
 
     def __str__(self) -> str:
-        return 'Rei'
+        return 'Rei '+ self.cor
 
 class Torre(Peca):
     def movimento_valido(self, linha_destino, coluna_destino):
         return super().movimento_valido(linha_destino, coluna_destino)
     
     def __str__(self) -> str:
-        return 'Torre'
+        return 'Torre '+ self.cor
     
 class Cavalo(Peca):
     def movimento_valido(self, linha_destino, coluna_destino):
         return super().movimento_valido(linha_destino, coluna_destino)
     
     def __str__(self) -> str:
-        return 'Cavalo'
+        return 'Cavalo '+ self.cor
     
 class Rainha(Peca):
     def movimento_valido(self, linha_destino, coluna_destino):
         return super().movimento_valido(linha_destino, coluna_destino)
     
     def __str__(self) -> str:
-        return 'Rainha'
+        return 'Rainha '+ self.cor
     
 def preparar_tabuleiro():
     #preparar a logica para colocar todas as peças nos lugares corretos
@@ -96,4 +96,7 @@ preparar_tabuleiro()
 mostra_tabuleiro()
 
 peao = Peao('branco', 1,2)
+
+rainha = Rainha('preto', 1, 1)
 print(peao)
+print(rainha)
