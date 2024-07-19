@@ -5,7 +5,7 @@ def mostra_tabuleiro():
         formater = []
         for coluna in range(tabuleiro.__len__()):
             formater.append(tabuleiro[linha][coluna].__str__())
-        print(formater)
+        print(f'{linha} {formater}')
 
 class Peca:
     def __init__(self, cor, linha_atual, coluna_atual):
